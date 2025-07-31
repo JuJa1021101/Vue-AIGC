@@ -1,0 +1,36 @@
+<template>
+    <nav>
+      <span @click="changeTab(1)">基础知识</span> |
+      <span @click="changeTab(2)">购物车</span> |
+      <span @click="changeTab(3)">待办事项</span>
+    </nav>
+
+    <Base v-if="state.index === 1"/>
+    <shopping v-if="state.index === 2"/>
+    <todo v-if="state.index === 3"/>
+</template>
+
+<script setup>
+import shopping from './components/shopping.vue'
+import Base from './components/base.vue'
+import todo from './components/todo.vue'
+// import { ref } from 'vue';//原始值和引用类型
+import { reactive } from 'vue';//原始值
+
+let state = reactive({
+  index:1
+})
+
+
+const changeTab = (i) =>{
+  console.log(i)
+  state.index = i
+}
+
+</script>
+
+<style lang="css">
+*{
+  text-align: center;
+}
+</style>

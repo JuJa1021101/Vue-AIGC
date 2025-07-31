@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+
+    <style></style>
+</head>
+<body class="font-sans bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="h-8">
+            </div>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-gray-700 hover:text-blue-500">首页</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">BOT</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">流点</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">课程</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">商城</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">APP</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">插件</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">活动</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">竞赛</a>
+            </nav>
+            <div class="user-actions flex space-x-2">
+                <button class="bg-blue-500 text-white py-2 px-4 rounded">创建者中心</button>
+                <button class="bg-blue-500 text-white py-2 px-4 rounded">会员</button>
+            </div>
+        </div>
+    </header>
+    <div class="container mx-auto flex mt-4">
+        <aside class="w-1/4 p-4 bg-white shadow rounded">
+            <nav>
+                <ul class="space-y-2">
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">综合</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">后端</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">前端</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">Android</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">iOS</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">人工智能</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">开发工具</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">代码人生</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">阅读</a></li>
+                    <li><a href="#" class="block text-gray-700 hover:text-blue-500">排行榜</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="w-3/4 p-4">
+            <section class="recommendations space-y-4">
+                <article class="bg-white p-4 shadow rounded">
+                    <h2 class="text-xl font-bold">从数据仓库到数据湖(下)：热门的数据湖开源框架</h2>
+                    <p>在上一篇从数据仓库到数据湖的...<a href="#" class="text-blue-500 hover:underline">更多</a></p>
+                    <footer class="text-gray-500 text-sm mt-2">
+                        <span>作者: LightGao</span> | <span>阅读: 190</span> | <span>评论: 2</span>
+                    </footer>
+                </article>
+                <article class="bg-white p-4 shadow rounded">
+                    <h2 class="text-xl font-bold">240701 - 240705 早聊 AI 资讯 | 苹果加入OpenAI董事会；AI要发展该...</h2>
+                    <p>苹果加入OpenAI董事会；AI要发展该...</p>
+                    <footer class="text-gray-500 text-sm mt-2">
+                        <span>阅读: 345</span>
+                    </footer>
+                </article>
+                <article class="bg-white p-4 shadow rounded">
+                    <h2 class="text-xl font-bold">前端部署发布项目后，如何解决缓存的老版本文件问题</h2>
+                    <p>针对这个问题有两种方式: 第一...</p>
+                    <footer class="text-gray-500 text-sm mt-2">
+                        <span>阅读: 2.8k</span> | <span>评论: 38</span> | <span>标签: JavaScript, Vue.js</span>
+                    </footer>
+                </article>
+                <article class="bg-white p-4 shadow rounded">
+                    <h2 class="text-xl font-bold">图文讲解CSS之BFC</h2>
+                    <p>前言 已解决了浮动Web页面布局的...</p>
+                    <footer class="text-gray-500 text-sm mt-2">
+                        <span>阅读: 1.1k</span> | <span>评论: 5</span>
+                    </footer>
+                </article>
+                <article class="bg-white p-4 shadow rounded">
+                    <h2 class="text-xl font-bold">springAI初体验 让人都能跑出大模型</h2>
+                    <p>springAI初体验 让人都能跑出大模型...</p>
+                    <footer class="text-gray-500 text-sm mt-2">
+                        <span>阅读: 2.2k</span> | <span>评论: 18</span>
+                    </footer>
+                </article>
+                <article class="bg-white p-4 shadow rounded">
+                    <h2 class="text-xl font-bold">如何使用 JavaScript 解析 URL?</h2>
+                    <p>如何使用 Web 前端开发者的利器...</p>
+                    <footer class="text-gray-500 text-sm mt-2">
+                        <span>阅读: 901</span>
+                    </footer>
+                </article>
+            </section>
+        </main>
+        <aside class="w-1/4 p-4 bg-white shadow rounded">
+            <section class="sidebar space-y-4">
+                <div class="sign-in bg-gray-200 p-4 rounded">
+                    <h3 class="text-lg font-bold">签到</h3>
+                    <button class="bg-blue-500 text-white py-1 px-3 rounded mt-2">2天</button>
+                    <p class="text-gray-600 mt-1">点击社区签到一天</p>
+                </div>
+                <div class="top-articles bg-gray-200 p-4 rounded">
+                    <h3 class="text-lg font-bold">文章榜</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="block text-gray-700 hover:text-blue-500">vueConf 2024：揭秘vue3.5...</a></li>
+                        <li><a href="#" class="block text-gray-700 hover:text-blue-500">Rust 在 Android 中的应用</a></li>
+                        <li><a href="#" class="block text-gray-700 hover:text-blue-500">豆包Marscode体验官：拿管...</a></li>
+                        <li><a href="#" class="block text-gray-700 hover:text-blue-500">Vine：一种全新定义 Vue 函数...</a></li>
+                        <li><a href="#" class="block text-gray-700 hover:text-blue-500">大厂都在偷偷用语义化标签...</a></li>
+                    </ul>
+                    <a href="#" class="text-blue-500 hover:underline">查看更多</a>
+                </div>
+                <div class="ad">
+                    <a href="#"><img src="ad.png" alt="广告" class="w-full rounded"></a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer class="bg-white shadow p-4 mt-4">
+        <p class="text-gray-700 text-center">© 2024 你的公司. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
